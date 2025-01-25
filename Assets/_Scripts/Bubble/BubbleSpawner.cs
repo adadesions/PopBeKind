@@ -31,12 +31,24 @@ namespace _Scripts.Bubble
         private void CreateEmojiScopeList()
         {
             var stringEmojiScopeList = _characterPresenter.GetEmojiScopeList();
+            
+            // Add Positive and Negative Effective Emoji to EmojiScopeList first
             foreach (var emoji in _emojisList)
             {
                 if (stringEmojiScopeList.Contains(emoji.name))
                 {
                     _emojiScopeList.Add(emoji);
                 }
+            }
+            
+            // Randomly add other 2 emojis to EmojiScopeList
+            var count = 0;
+            while (count < 2)
+            {
+                var randomEmoji = _emojisList[Random.Range(0, _emojisList.Count)];
+                if (_emojiScopeList.Contains(randomEmoji)) continue;
+                _emojiScopeList.Add(randomEmoji);
+                count++;
             }
         }
 
@@ -47,7 +59,7 @@ namespace _Scripts.Bubble
                 for (var i = 0; i < 3; i++)
                 {
                     var randomEmoji = _emojiScopeList[Random.Range(0, _emojiScopeList.Count)];
-                    var bubble = _bubbleFactory.CreateBubble(randomEmoji);
+                    _bubbleFactory.CreateBubble(randomEmoji);
                 }
 
                 yield return new WaitForSeconds(Random.Range(1, 5));
