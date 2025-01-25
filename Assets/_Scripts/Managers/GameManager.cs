@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 namespace _Scripts.Managers
@@ -7,6 +8,10 @@ namespace _Scripts.Managers
     public class GameManager : MonoBehaviour
     {
         private GameManagerView _view;
+        
+        // Events
+        public UnityEvent OnWin;
+        public UnityEvent OnLose;
 
         private void Awake()
         {
@@ -30,12 +35,14 @@ namespace _Scripts.Managers
         {
             StopTime();
             _view.ShowWinScreen();
+            OnWin?.Invoke();
         }
 
         private void LoseGame()
         {
             StopTime();
             _view.ShowLoseScreen();
+            OnLose?.Invoke();
         }
         
         public void RestartGame()

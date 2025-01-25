@@ -710,8 +710,8 @@ Transform:
   m_GameObject: {fileID: 34578491}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0482, y: 0.57, z: 0}
-  m_LocalScale: {x: 1.2199165, y: 2.1319854, z: 1.3590649}
+  m_LocalPosition: {x: 0.0358, y: 0.57, z: 0}
+  m_LocalScale: {x: 1.3880209, y: 2.1319854, z: 1.3590649}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1806010046}
@@ -889,6 +889,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd5b3ea730664e238f3b3c6971640cc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnWin:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817645601}
+        m_TargetAssemblyTypeName: _Scripts.Managers.BgmManager, Assembly-CSharp
+        m_MethodName: PlayWinBgm
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnLose:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817645601}
+        m_TargetAssemblyTypeName: _Scripts.Managers.BgmManager, Assembly-CSharp
+        m_MethodName: PlayLoseBgm
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &96674809
 GameObject:
   m_ObjectHideFlags: 0
@@ -1364,7 +1394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a963fc786cde42f1b31fa1ed73873668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startTimeInSeconds: 120
+  _startTimeInSeconds: 2
   _timeText: {fileID: 849248702}
   OnTimeUp:
     m_PersistentCalls:
@@ -3772,6 +3802,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1817645597}
+  - component: {fileID: 1817645601}
   - component: {fileID: 1817645598}
   - component: {fileID: 1817645600}
   - component: {fileID: 1817645599}
@@ -3812,7 +3843,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4007,6 +4038,21 @@ MonoBehaviour:
   _goodFeelingSfx: {fileID: 8300000, guid: 2189330999f1c4d629a02dcb1e719613, type: 3}
   _badFeelingSfx: {fileID: 8300000, guid: be7fb57adfa5b420fa2472ecf45a55fd, type: 3}
   _popSfx: {fileID: 8300000, guid: 9cb19eb032d304b07acec596ae2ce4a4, type: 3}
+--- !u!114 &1817645601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817645596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47387e3ad0a141f9987d4793e15b2b8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio: {fileID: 1817645598}
+  _winBgm: {fileID: 8300000, guid: 18e7a977900e54e27a8c431b34ffc659, type: 3}
+  _loseBgm: {fileID: 8300000, guid: 35e4f1431945c43fc9e5bf6e158e8d1c, type: 3}
 --- !u!1 &1874567849
 GameObject:
   m_ObjectHideFlags: 0
@@ -4064,7 +4110,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pain
+  m_text: Bad
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 015573da50ed04390be9f20287a541d6, type: 2}
   m_sharedMaterial: {fileID: -2237749729835323621, guid: 015573da50ed04390be9f20287a541d6, type: 2}
