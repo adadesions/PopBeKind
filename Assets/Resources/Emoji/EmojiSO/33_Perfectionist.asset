@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6aead657dd1d5694d99a3678194e214e, type: 3}
-  m_Name: 33_Perfectionistic
+  m_Name: 33_Perfectionist
   m_EditorClassIdentifier: 
   idx: 33
   sprite: {fileID: -5806429548128397179, guid: c547ecfdc71cd6e4992fb19378b276f7, type: 3}
-  name: Perfectionistic
+  name: Perfectionist

@@ -1865,6 +1865,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _totalScore: 0
+  _minValue: -100
+  _maxValue: 100
 --- !u!114 &1395346748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2047,7 +2049,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1512924800
 Transform:
@@ -2110,6 +2112,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b81c77ef51e05b0469f1fddf802967a4, type: 2}
   - {fileID: 11400000, guid: 8fa0c54d935ac804888d21112180a069, type: 2}
   - {fileID: 11400000, guid: 7ec1cf3d04e78e34e896bd081cc5cab0, type: 2}
+  - {fileID: 11400000, guid: 4961d9fa05863464a84eb06a69a265c5, type: 2}
+  - {fileID: 11400000, guid: bd1cb5d8fddfc4941a7229f79706135f, type: 2}
+  - {fileID: 11400000, guid: 96be443e73d374d2098fbba41882b4f5, type: 2}
 --- !u!224 &1705833286 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7120690649848513104, guid: b06b241bccb53284a89c91b5830a8e7a, type: 3}

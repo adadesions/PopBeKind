@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6aead657dd1d5694d99a3678194e214e, type: 3}
-  m_Name: 12_Empathy
+  m_Name: 34_Fear of Inefficiency or Routine
   m_EditorClassIdentifier: 
-  idx: 12
-  sprite: {fileID: -205270267638800340, guid: 235aa3ce91377e1478988ca8424f9a06, type: 3}
-  name: Empathy
+  idx: 34
+  sprite: {fileID: -8635473927783141726, guid: 4ecd3df99bb64e24dbdd4c23e9ff000c, type: 3}
+  name: Fear of Inefficiency or Routine

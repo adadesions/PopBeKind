@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idx: 25
   sprite: {fileID: -2493567605429909350, guid: 23104bf0bb6413441a4170a11ac7015c, type: 3}
-  name: Calm under presssure
+  name: Calm under pressure

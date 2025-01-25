@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6aead657dd1d5694d99a3678194e214e, type: 3}
-  m_Name: 23_Failure
+  m_Name: 36_Losing authority
   m_EditorClassIdentifier: 
-  idx: 23
-  sprite: {fileID: -782403592190967834, guid: 6731678ab416a1d4eb6887a1de207cc0, type: 3}
-  name: Failure
+  idx: 36
+  sprite: {fileID: -6492823388205453986, guid: 90f33abb77831e7479894fa1cf2d6223, type: 3}
+  name: Losing authority
