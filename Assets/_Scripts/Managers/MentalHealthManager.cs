@@ -10,6 +10,8 @@ namespace _Scripts.Managers
         [SerializeField] private int _totalScore;
         private int _starterScore;
         private MentalHealthView _view;
+        [SerializeField] private int _minValue = -100;
+        [SerializeField] private int _maxValue = 100;
 
         private void Awake()
         {
@@ -33,6 +35,7 @@ namespace _Scripts.Managers
         public void ChangeScore(int score)
         {
             _totalScore += score;
+            _totalScore = Math.Clamp(_totalScore, _minValue, _maxValue);
             _view.UpdateScore(_totalScore);
         }
         
