@@ -39,8 +39,19 @@ namespace _Scripts.Character
 
         public int CheckBubbleScore(string emojiName)
         {
-            return _model.Personality.PositiveEffective.Contains(emojiName) ? 10 :
+            var score = _model.Personality.PositiveEffective.Contains(emojiName) ? 10 :
                 _model.Personality.NegativeEffective.Contains(emojiName) ? -10 : 0;
+            
+            if (score > 0)
+            {
+                _view.ShowGoodFeeling();
+            }
+            else if (score < 0)
+            {
+                _view.ShowBadFeeling();
+            }
+
+            return score;
         }
 
         public List<string> GetEmojiScopeList()
