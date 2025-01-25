@@ -135,10 +135,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af222f34a3b7e45278fa38ae92e97401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  approachSpeed: 0.1
+  approachSpeed: 0.2
   initialRadius: 10
-  minOrbitSpeed: 0.1
-  maxOrbitSpeed: 0.5
+  minOrbitSpeed: 0.05
+  maxOrbitSpeed: 0.3
 --- !u!114 &7815709477149639349
 MonoBehaviour:
   m_ObjectHideFlags: 0
