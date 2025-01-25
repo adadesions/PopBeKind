@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using _Scripts.JsonTools;
 using Nueng_s_Brance.Scripts.ScriptableObjects;
 using UnityEngine;
+using UnityEngine.Events;
 using Random = UnityEngine.Random;
 
 namespace _Scripts.Character
@@ -14,6 +15,10 @@ namespace _Scripts.Character
         [SerializeField] private string _personalityJsonPath;
         private SpriteRenderer _sprite;
         private CharacterView _view;
+        
+        // Events
+        public UnityEvent OnGoodFeeling;
+        public UnityEvent OnBadFeeling;
 
         private void Awake()
         {
@@ -45,10 +50,12 @@ namespace _Scripts.Character
             if (score > 0)
             {
                 _view.ShowGoodFeeling();
+                OnGoodFeeling?.Invoke();
             }
             else if (score < 0)
             {
                 _view.ShowBadFeeling();
+                OnBadFeeling?.Invoke();
             }
 
             return score;

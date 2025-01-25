@@ -1,11 +1,15 @@
 using _Scripts.Interactable;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 namespace _Scripts.PlayerInput
 {
     public class PlayerInputController : MonoBehaviour
     {
+        // Events
+        public UnityEvent OnInteracted;
+        
         public void OnMouseDownOrTouchDown()
         {
             // Get the position of the mouse click or touch
@@ -18,11 +22,10 @@ namespace _Scripts.PlayerInput
             
             var hitCollider = Physics2D.OverlapPoint(worldPosition);
             
-            print("Click Detected");
             if (hitCollider != null && hitCollider.TryGetComponent<IInteractable>(out var interactable))
             {
-                print("Interactable Found");
                 interactable.Interact();
+                OnInteracted?.Invoke();
             }
         }
     }
