@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aead657dd1d5694d99a3678194e214e, type: 3}
+  m_Name: 14_Uncertainty
+  m_EditorClassIdentifier: 
+  idx: 14
+  sprite: {fileID: 6781470486933878603, guid: f0baab247c849f444a9623581c91df7d, type: 3}
+  name: Uncertainty

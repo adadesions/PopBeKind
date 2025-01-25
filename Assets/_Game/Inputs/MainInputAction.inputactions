@@ -1,0 +1,45 @@
+{
+    "name": "MainInputAction",
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "b9f2cd55-9362-44d8-b136-bf0a110c603d",
+            "actions": [
+                {
+                    "name": "OnPointerDown",
+                    "type": "Button",
+                    "id": "6eae4177-82a5-4436-9ec8-3a38dfe938d7",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c55dcadb-e462-4bb8-b12f-53b251383b23",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OnPointerDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7304d779-cc6d-467f-9815-a79ebde458e0",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OnPointerDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

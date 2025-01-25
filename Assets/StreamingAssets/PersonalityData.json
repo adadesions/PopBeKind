@@ -1,0 +1,68 @@
+[
+  {
+    "PersonalityType": "The Architect",
+    "PositiveEffective": ["Brain", "Innovation"],
+    "NegativeEffective": ["Failure", "Loss of control"],
+    "PersonalityHints": [
+      "Forward-thinking and detail-oriented.",
+      "Always generating ideas and improving systems.",
+      "Fear of failure or not meeting expectations.",
+      "Reluctant to show vulnerability or emotions."
+    ]
+  },
+  {
+    "PersonalityType": "The Virtuoso",
+    "PositiveEffective": ["Adaptability", "Calm under pressure"],
+    "NegativeEffective": ["Commitment", "Vulnerability"],
+    "PersonalityHints": [
+      "Adapts quickly to new situations or challenges.",
+      "Stays calm under pressure.",
+      "May seem emotionally distant.",
+      "Tends to break or ignore rules if they seem unnecessary."
+    ]
+  },
+  {
+    "PersonalityType": "The Logician",
+    "PositiveEffective": ["Analytical mind", "Adaptability"],
+    "NegativeEffective": ["Fear of Inefficiency or Routine", "Being misunderstood"],
+    "PersonalityHints": [
+      "Sharp problem-solving skills.",
+      "Open to new ideas and theories.",
+      "Enjoy exploring complex concepts.",
+      "Fear of being stuck in the mundane."
+    ]
+  },
+  {
+    "PersonalityType": "The Commander",
+    "PositiveEffective": ["Leadership", "Efficiency"],
+    "NegativeEffective": ["Incompetence", "Losing authority"],
+    "PersonalityHints": [
+      "They are confident, natural leaders.",
+      "They value efficiency and constant improvement.",
+      "They dislike waste and fear disorder.",
+      "They fear losing control, preferring to lead and organize."
+    ]
+  },
+  {
+    "PersonalityType": "The Entertainer",
+    "PositiveEffective": ["Sociable", "Charm"],
+    "NegativeEffective": ["Boredom", "Disorganized"],
+    "PersonalityHints": [
+      "Warm and makes others feel happy and comfortable.",
+      "Enjoys socializing and making connections.",
+      "Needs constant stimulation and gets bored easily.",
+      "Struggles with planning and keeping things organized, leading to chaos."
+    ]
+  },
+  {
+    "PersonalityType": "The Mediator",
+    "PositiveEffective": ["Empathetic", "Open-minded"],
+    "NegativeEffective": ["Indecisive", "Perfectionistic"],
+    "PersonalityHints": [
+      "Sensitive to others' feelings and perspectives.",
+      "Open to new ideas and diversity.",
+      "Struggles with decision-making.",
+      "Overly focused on perfection and self-criticism."
+    ]
+  }
+]
