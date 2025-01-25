@@ -49,6 +49,16 @@ namespace _Scripts.Managers
             }
         }
 
+        public void CheckWinLoseConditionOnTimeUp()
+        {
+            if (_totalScore >= 0) 
+            {
+                OnWin?.Invoke();
+            } else {
+                OnLose?.Invoke();
+            }
+        }
+
         private void ChangeScore(int score)
         {
             _totalScore += score;

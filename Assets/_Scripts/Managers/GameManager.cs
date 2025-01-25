@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace _Scripts.Managers
 {
@@ -35,6 +36,14 @@ namespace _Scripts.Managers
         {
             StopTime();
             _view.ShowLoseScreen();
+        }
+        
+        public void RestartGame()
+        {
+            Time.timeScale = 1;
+            
+            // Reload the current scene
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
