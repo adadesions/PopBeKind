@@ -20,10 +20,20 @@ namespace _Scripts.Managers
             MentalHealthManager.OnLose += LoseGame;
         }
 
+        private void Start()
+        {
+            StopTime();
+        }
+
         private void OnDestroy()
         {
             MentalHealthManager.OnWin -= WinGame;
             MentalHealthManager.OnLose -= LoseGame;
+        }
+        
+        public void StartGame()
+        {
+            Time.timeScale = 1;
         }
 
         private void StopTime()
@@ -51,6 +61,14 @@ namespace _Scripts.Managers
             
             // Reload the current scene
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+        public void ExitGameplay()
+        {
+            Time.timeScale = 1;
+            
+            // Load the main menu scene
+            SceneManager.LoadScene(0);
         }
     }
 }
