@@ -13,11 +13,18 @@ namespace _Scripts.Character
         [SerializeField] private List<Sprite> _characterSpriteList;
         [SerializeField] private string _personalityJsonPath;
         private SpriteRenderer _sprite;
+        private CharacterView _view;
 
         private void Awake()
         {
+            _view = GetComponent<CharacterView>();
             _sprite = GetComponent<SpriteRenderer>();
             SetupCharacterModel();
+        }
+
+        private void Start()
+        {
+            _view.SetPersonality(_model.Personality.PersonalityType);
         }
 
         private void SetupCharacterModel()
