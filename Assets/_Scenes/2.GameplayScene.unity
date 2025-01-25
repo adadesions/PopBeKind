@@ -1394,7 +1394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a963fc786cde42f1b31fa1ed73873668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startTimeInSeconds: 2
+  _startTimeInSeconds: 120
   _timeText: {fileID: 849248702}
   OnTimeUp:
     m_PersistentCalls:
@@ -3285,6 +3285,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4961d9fa05863464a84eb06a69a265c5, type: 2}
   - {fileID: 11400000, guid: bd1cb5d8fddfc4941a7229f79706135f, type: 2}
   - {fileID: 11400000, guid: 96be443e73d374d2098fbba41882b4f5, type: 2}
+  _bubbleAmountPerRound: 10
 --- !u!1 &1542171043
 GameObject:
   m_ObjectHideFlags: 0
@@ -3746,7 +3747,7 @@ MonoBehaviour:
   _characterSpriteList:
   - {fileID: 21300000, guid: 473a9a53d1fb04f428c1778bb2840736, type: 3}
   - {fileID: 21300000, guid: dbb9e10f08adb43449418631dae06551, type: 3}
-  _personalityJsonPath: PersonalityData.json
+  _personalityJsonPath: PersonalityData
   OnGoodFeeling:
     m_PersistentCalls:
       m_Calls:

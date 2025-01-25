@@ -15,6 +15,7 @@ namespace _Scripts.Bubble
         private BubbleFactory _bubbleFactory;
         private CharacterPresenter _characterPresenter;
         private List<EmojiSO> _emojiScopeList = new();
+        [SerializeField] private int _bubbleAmountPerRound = 3;
 
         private void Awake()
         {
@@ -56,7 +57,8 @@ namespace _Scripts.Bubble
         {
             while (true)
             {
-                for (var i = 0; i < 3; i++)
+                var randBubbleAmount = Random.Range(1, _bubbleAmountPerRound + 1);
+                for (var i = 0; i < randBubbleAmount; i++)
                 {
                     var randomEmoji = _emojiScopeList[Random.Range(0, _emojiScopeList.Count)];
                     _bubbleFactory.CreateBubble(randomEmoji);
